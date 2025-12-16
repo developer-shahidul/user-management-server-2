@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const port = process.env.PORT || 3000;
+// const port = process.env.PORT || 3000;
 
 // middleware
 app.use(cors());
@@ -72,6 +72,6 @@ async function run() {
 }
 run().catch(console.dir);
 
-app.listen(port, (req, res) => {
-  console.log(`server running port :${port}`);
-});
+// app.listen(port, (req, res) => {
+//   console.log(`server running port :${port}`);
+// });
